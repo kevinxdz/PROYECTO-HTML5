@@ -48,20 +48,65 @@
               </ul>
            </nav>
           </div>
-          <!--el inner header-->
+          <!--el inner header para hacer sliders-->
         </header>
-        <div class="sliderweb">
-          <ul>
-            <li><img src="img/slider/1.jpeg" alt="fantasia 1">
-                <img src="img/slider/2.jpeg" alt="fantasia 2">
-                <img src="img/slider/3.jpeg" alt="fantasia 3">
+        <section class="sliderweb">
+          <ul class="slider1">
+            <!--imagenes para el slider-->
+            <li>
+              <img src="img/slider/slider1.jpeg" alt="fantasia 1">
+            </li>
+            <li>
+              <img src="img/slider/slider2.jpeg" alt="fantasia 2">
+            </li>
+            <li>
+              <img src="img/slider/slider3.jpeg" alt="fantasia 3">
             </li>
           </ul>
-
-        </div>
+        </section>
 
       </div>
     </div>
 
+    <!--contenido de la pagina-->
+    <section class="tres elementos" id="videos">
+      <div class="iconweb">
+        <i class="fa fa-desktop"></i>
+      </div>
+      <h3>Diseño Web</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+<!--segundo-->
+    <section class="tres elementos" id="videos">
+      <div class="iconweb">
+        <i class="fa fa-pencil-square-o"></i>
+      </div>
+      <h3>Diseño Grafico</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+<!--tercero-->
+<section class="tres elementos" id="videos">
+  <div class="iconweb">
+    <i class="fa fa-file-code-o"></i>
+  </div>
+  <h3>Desarrollo Web</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</section>
+
+
+    <!--scrips de jquery para el slider-->
+    <script>
+    $(document).ready(function(){
+      $('.slider1').bxSlider({
+        mode: 'fade',
+      });
+      $('.slider2').bxSlider({
+        mode: 'fade',
+      });
+      $('.slider3').bxSlider({
+        mode: 'fade',
+      });
+    });
+    </script>
   </body>
 </html>
